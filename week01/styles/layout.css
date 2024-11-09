@@ -1,0 +1,66 @@
+/* Set font family and basic styling */
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Header, main content, footer */
+    grid-template-columns: 1fr;
+    gap: 20px;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+/* Header styling */
+header {
+    background-color: #4A90E2; /* Light blue */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation menu with Flexbox */
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Main content styling */
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* Main section and aside */
+    gap: 20px;
+    padding: 20px;
+    background-color: #F3F4F6; /* Light gray */
+}
+
+/* Section styling */
+section {
+    background-color: #FFFFFF; /* White */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Aside styling */
+aside {
+    background-color: #EDEDED; /* Light gray */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styling */
+footer {
+    background-color: #4A90E2;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
