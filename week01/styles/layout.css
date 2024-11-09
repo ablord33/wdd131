@@ -14,14 +14,14 @@ header {
     background-color: #4A90E2; /* Light blue */
     color: white;
     padding: 20px;
-    text-align: center;
+    text-align: left;
 }
 
 /* Navigation menu with Flexbox */
 nav ul {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 300px;
     list-style: none;
     padding: 0;
 }
