@@ -1,0 +1,97 @@
+/* Base CSS for styling the HTML */
+
+/* General Page Styling */
+body {
+    font-family: 'Roboto', sans-serif; /* Replace with your chosen Google Font */
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Light background for contrast */
+    color: #333; /* Text color */
+}
+
+/* Center the main content */
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* Main section and aside */
+    gap: 20px;
+    padding: 20px;
+    background-color: #F3F4F6; /* Light gray */
+}
+
+/* Card Styling */
+.card.about-me {
+    grid-column: span 2; /* This makes the About Me card span across 2 columns */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card.web-dev {
+    grid-column: span 1; /* This makes the Web Dev card span across 1 column */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styling */
+header {
+    background-color: #003366; /* Dark blue for header */
+    color: white;
+    padding: 10px 20px;
+}
+
+/* Navigation Styling */
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 15px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #00509e; /* Hover effect */
+    border-radius: 5px;
+}
+
+.card.about-me img {
+    width: 100px; /* Adjust this value to make the image appear smaller */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin-top: 10px;
+}
+
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #003366; /* Matches header */
+    color: white;
+}
+
+/* Responsive Typography */
+h1 {
+    font-family: 'Roboto Slab', serif; /* Pair with a secondary Google Font */
+    color: #003366;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Responsive Media Queries */
+@media (min-width: 600px) {
+    main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
