@@ -1,0 +1,26 @@
+/* Import the Google Font */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Common styles for header, main, and footer */
+header, main, footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid #ccc; /* Faint border */
+    padding: 1rem;
+    background-color: #d0e7ff; /* Light blueish background */
+}
+
+/* Main element grid layout */
+main {
+    display: grid;
+    grid-template-columns: 1fr; /* One column */
+    gap: 1rem; /* Equal gap of 1rem */
+}
+
+/* Styling for section elements */
+section {
+    padding: 1rem;
+    background-color: #f9f9f9; /* Lighter/white background */
+}
