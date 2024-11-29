@@ -1,0 +1,30 @@
+/* Apply styles for screens larger than 768px */
+@media (min-width: 768px) {
+    main {
+        grid-template-columns: repeat(3, 1fr); /* 3-column layout */
+        gap: 2rem;
+    }
+
+    main img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    /* Ensure the menu is always visible on larger screens */
+    nav ul {
+        display: flex;
+    }
+
+    #menuButton {
+        display: none; /* Hide hamburger menu in large view */
+    }
+
+    #mainNav {
+        display: flex; /* Always show navigation in larger views */
+    }
+
+    #mainNav ul {
+        flex-direction: row; /* Horizontal menu */
+        gap: 2rem;
+    }
+}
